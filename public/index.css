@@ -4,9 +4,13 @@ textarea{
 }
 
 input{
-    width: 40%;
+    width: 25%;
 }
 
 button{
  width: 15%;
+}
+
+.operador{
+    width: 5%;
 }

@@ -5,10 +5,20 @@ console.log(variavelParaGuardarOBotao);
 let textAreaResultado = document.getElementById("textAreaResultado");
 console.log(textAreaResultado);
 let segundoInput = document.getElementById("segundoValor");
+let operador = document.getElementById("operador");
 
 variavelParaGuardarOBotao.addEventListener("click", function(){
     console.log(inputText.value);  
-    let resultado = parseFloat(inputText.value) + parseFloat(segundoInput.value);
+    let resultado = 0; 
+    if(operador.value === "+"){
+        resultado = parseFloat(inputText.value) + parseFloat(segundoInput.value);
+    }      
+    if(operador.value === "*")
+        resultado = parseFloat(inputText.value) * parseFloat(segundoInput.value);
+    if(operador.value === "/")
+        resultado = parseFloat(inputText.value) / parseFloat(segundoInput.value);
+    if(operador.value === "-")
+        resultado = parseFloat(inputText.value) - parseFloat(segundoInput.value);
     textAreaResultado.textContent = textAreaResultado.textContent  +"\n"+ resultado;
     console.log(1 + 1);
 });
