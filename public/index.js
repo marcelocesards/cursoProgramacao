@@ -1,3 +1,4 @@
+imprimirNoConsole("Atenção, estamos carreganto a pagina!");
 let inputText = document.getElementById("inputTexto");
 console.log(inputText);
 let variavelParaGuardarOBotao = document.getElementById("botao");
@@ -21,4 +22,12 @@ variavelParaGuardarOBotao.addEventListener("click", function(){
         resultado = parseFloat(inputText.value) - parseFloat(segundoInput.value);
     textAreaResultado.textContent = textAreaResultado.textContent  +"\n"+ resultado;
     console.log(1 + 1);
+    imprimirNoConsole("O botão foi clicado");
 });
+
+imprimirNoConsole("A função foi executada com sucesso!");
+
+function imprimirNoConsole(texto){
+    console.log(texto);
+}
+

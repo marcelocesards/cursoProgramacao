@@ -1,3 +1,32 @@
 .text-center{
     text-align: center;
 }
+
+.card{
+    border: solid greenyellow;
+    width: 280px;
+    float: left;
+    margin: 5px;
+}
+
+.fit-img-cachorro{
+    width:100%;
+}
+
+.card-body{
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+.exemploDeCaixa{
+    border: solid red;
+    height: 400px;
+    width: 300px;
+    float: left;
+}
+.exemploDeCaixa2{
+    border: solid pink;
+    height: 400px;
+    width: 300px;
+    float: left;
+}

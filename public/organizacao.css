@@ -24,7 +24,78 @@
 }
 
 .card-produto-content{
-   margin: 5px; 
-   
+   margin: 5px;    
 }
 
+main{
+    padding:20px;
+    margin-top:30px;
+    height:1500px;
+}
+
+body {margin:0;}
+
+li {
+    float: left;
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+
+li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+  form{
+    background-color: #333;
+    height: 200px;
+    width: 262px;
+    padding: 20px 50px 20px 20px;
+    margin-top:30px;
+  }
+
+  form input{
+      margin-top:5px;
+      margin-bottom:5px;
+      padding: 14px;
+      display:block;
+      width: 100%;
+  }
+
+  form textarea{
+    padding: 14px;
+    width:100%;
+    display:block;
+}
+
+form button{
+    margin-top: 10px;
+}
+
+  form label{
+      color: white;
+  }
+
+  .form-group{
+      width: 100%;
+  }
