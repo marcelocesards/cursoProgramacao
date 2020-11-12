@@ -1,0 +1,31 @@
+body{
+    margin:0px;
+}
+main{
+    margin-top: 30px;
+    padding:20px;
+    height: 1500px;
+}
+
+ul{
+    list-style-type: none;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    margin:0px;
+    padding:0px;
+    top:0px;
+}
+
+li{
+    float: left;
+}
+
+li a {    
+    display: block;
+    padding: 14% 16%;
+    text-align: center;
+    color:white;
+    text-decoration: none;
+}

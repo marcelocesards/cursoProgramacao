@@ -1,0 +1,10 @@
+div {
+    background-color: yellowgreen;
+    width: 80%;
+    height: 100vh;
+    text-align: center;
+    /*primeira forma de deixar no centro*/
+    margin:auto;
+    /*para centralizar o conteúdo no meio vertical*/
+    line-height: 100vh;
+}

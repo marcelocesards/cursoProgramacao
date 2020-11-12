@@ -1,0 +1,51 @@
+p::selection {
+    background-color: violet;
+    color: white;
+}
+
+p::first-letter{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+div,
+section{
+    height: 100vh;
+}
+
+a {
+    font-size: 5rem;
+    color: violet;
+}
+
+html {
+    /*dark mode
+    background: black;
+    filter: invert(1) hue-rotate(189deg);
+    */
+}
+
+div{
+    /*quando eu duplico o box-shadow, eu deixo mais suave, aumentandoa  área da sombra*/
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 40px 40px rgba(0, 0, 0, 0.1);
+    /*a mesma coisa eu poderia fazer com uma animação por exemplo, onde eu após os parametros inicais, 
+    coloco uma virgula e depois continuo acrecentando novos parametros que vão incrementar
+    a animação
+    animation: fade 1s ease, (um,a nova animação');
+    */
+}
+
+/* Adicionando um gradiente em uma palavra.
+*/
+h1{
+    font-size: 4rem;
+    background: linear-gradient(to left, rgb(112, 101, 214),  rgb(230, 106, 213));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}

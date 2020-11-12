@@ -1,0 +1,15 @@
+button, p {
+    animation: fade 1s ease forwards;
+}
+
+@keyframes fade{
+    from{
+        opacity: 1;
+        /*tira a habilidade de clicar no botão*/
+        pointer-events: all;
+    }
+    to{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
