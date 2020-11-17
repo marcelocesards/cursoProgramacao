@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.parent {
+    height: 100vh;
+    border: 20px solid black;
+    display:flex;
+}
+.child1 {
+    height: 200px;
+    width: 200px;
+    background:  rgb(76, 6, 240);
+    border: 5px solid rgb(15, 241, 102);
+}
+
+.child2 {
+    height: 200px;
+    width: 200px;
+    background: rgb(216, 68, 68);
+    border: 5px solid rgb(15, 241, 102);
+    align-self: center;
+}
+.child3 {
+    height: 200px;
+    width: 200px;
+    background: rgb(68, 0, 48);
+    border: 5px solid rgb(15, 241, 102);
+    align-self: flex-end;
+}
+
+h1{
+    color: cornsilk;
+}
