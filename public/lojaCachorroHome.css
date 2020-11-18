@@ -3,7 +3,7 @@
 }
 
 .card{
-    border: solid greenyellow;
+    border: solid rgb(255, 165, 47);
     width: 280px;
     float: left;
     margin: 5px;
