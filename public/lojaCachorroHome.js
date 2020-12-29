@@ -16,56 +16,47 @@ let cachorro3={
     idade:"2 ano",
     img: "https://www.petlove.com.br/dicas/wp-content/uploads/2018/04/dogue-alem%C3%A3o.jpg"
 }
+let cachorro4={
+    nome:"Luba",
+    descricao:"Luba é cego",
+    idade:"6 meses",
+    img: "https://www.hypeness.com.br/1/2020/07/Cachorros-podem-reconhecer-pessoas-n%C3%A3o-confi%C3%A1veis-foto-unsplash-3.jpg"
+}
 let listaDeCachorro=[];
 listaDeCachorro.push(cachorro)
 listaDeCachorro.push(cachorro2)
 listaDeCachorro.push(cachorro3)
+listaDeCachorro.push(cachorro4)
 console.log (listaDeCachorro);
 
 let cardGroup = document.querySelector('.card-group');
 console.log(cardGroup);
 
-let card = document.createElement('div');
-cardGroup.appendChild(card);
-card.classList.add('card');
+for (let index = 0; index < listaDeCachorro.length; index++) {
+    const cachorro = listaDeCachorro[index];
+    console.log(cachorro);
 
-let img = document.createElement('img');
-card.appendChild(img);
-img.classList.add('fit-img-cachorro');
-img.setAttribute('src', cachorro.img);
+    //construção do card
+    let card = document.createElement('div');
+    cardGroup.appendChild(card);
+    card.classList.add('card');
 
-let divCardBody = document.createElement('div');
-card.appendChild(divCardBody);
-divCardBody.classList.add('card-body');
-divCardBody.classList.add('text-center');
+    let img = document.createElement('img');
+    card.appendChild(img);
+    img.classList.add('fit-img-cachorro');
+    img.setAttribute('src', cachorro.img);
 
-let paragrafo = document.createElement('p');
-divCardBody.appendChild(paragrafo);
-paragrafo.textContent = cachorro.descricao;
+    let divCardBody = document.createElement('div');
+    card.appendChild(divCardBody);
+    divCardBody.classList.add('card-body');
+    divCardBody.classList.add('text-center');
 
-let botao = document.createElement('button');
-divCardBody.appendChild(botao);
-botao.textContent ='Saiba mais';
+    let paragrafo = document.createElement('p');
+    divCardBody.appendChild(paragrafo);
+    paragrafo.textContent = cachorro.descricao;
 
-
-let card1 = document.createElement('div');
-cardGroup.appendChild(card1);
-card1.classList.add('card');
-
-let img1 = document.createElement('img');
-card1.appendChild(img1);
-img1.classList.add('fit-img-cachorro');
-img1.setAttribute('src', cachorro.img);
-
-let divCardBody1 = document.createElement('div');
-card1.appendChild(divCardBody1);
-divCardBody1.classList.add('card-body');
-divCardBody1.classList.add('text-center');
-
-let paragrafo1 = document.createElement('p');
-divCardBody1.appendChild(paragrafo1);
-paragrafo1.textContent = cachorro.descricao;
-
-let botao1 = document.createElement('button');
-divCardBody1.appendChild(botao1);
-botao1.textContent ='Saiba mais';
+    let botao = document.createElement('button');
+    divCardBody.appendChild(botao);
+    botao.textContent ='Saiba mais';
+    //fim construção card
+}
